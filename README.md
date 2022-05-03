@@ -44,3 +44,6 @@ https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs
 https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset
 
 https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv
+
+### Reference
+https://can-do.tistory.com/138?category=804018
