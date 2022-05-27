@@ -2,6 +2,9 @@
 이 프로젝트는 자연어처리 수업의 1인 기말 프로젝트입니다.<br>
 This project is the solo term project of the NLP course.
 
+해당 github에 공개되어 있습니다.
+https://github.com/byein/NLP_Analysis_of_Lyrics_Trend_and_WordCloud
+
 ### Project Title
 빌보드(1964~2015) 노래 가사 분석에 따른 시대별 트렌드 파악 & 워드클라우드 추출 <br>
 NLP_Analysis_of_Lyrics_Trend_and_WordCloud 
