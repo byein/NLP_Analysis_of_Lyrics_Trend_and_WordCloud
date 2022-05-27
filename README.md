@@ -75,6 +75,8 @@ The purpose of this project is find the sentiment trend of the eras by using the
 
 #### Word2vec Visualization
 
+<img width="1327" alt="screenshot_style_word2vec" src="https://user-images.githubusercontent.com/49120917/170653427-aca11c3b-92e9-42b5-b23f-6c15a3328166.png">
+
 ##### 1960s
 ![word2vec_60s](https://user-images.githubusercontent.com/49120917/170039905-06577422-6f95-4e46-a664-8a4b2efa1e8f.png)
 ##### 1970s
@@ -129,8 +131,11 @@ The title or dataset can be changed.~~
 [최종 사용 데이터셋](https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv)
 
 ### Reference
-[주제 및 데이터](https://can-do.tistory.com/5?category=804018)
+[음악 가사 분석] kaggle 데이터 bilboard 1945-2015 (1) - 데이터 전처리<br>
+https://can-do.tistory.com/5?category=804018
 
-[tfidf wordcloud](https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb)
+WordCloud-Generator<br>
+https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb
 
-[tfidf, kmeans](https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook)
+Clustering documents with TFIDF and KMeans<br>
+https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook
