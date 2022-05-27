@@ -120,13 +120,13 @@ tf-idf를 이용해 wordcloud를 만든 결과를 보면 전체적으로 love, l
 
 
 ### Dataset
-~~kaggle에서 제공하는 데이터셋을 활용할 예정이지만, 적절한 데이터셋이 더는 제공되지 않아 프로젝트 주제를 변경하거나 크롤링을 통한 데이터셋으로 바뀔 수 있습니다.<br>
-Using the Kaggle Dataset, but there are valid datasets no longer.
-The title or dataset can be changed.
+~~kaggle에서 제공하는 데이터셋을 활용할 예정이지만, 적절한 데이터셋이 더는 제공되지 않아 프로젝트 주제를 변경하거나 크롤링을 통한 데이터셋으로 바뀔 수 있습니다.~~<br>
+~~Using the Kaggle Dataset, but there are valid datasets no longer.
+The title or dataset can be changed.~~
 
-~~https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs
+~~https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs~~
 
-~~https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset
+~~https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset~~
 
 [최종 사용 데이터셋](https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv)
 
