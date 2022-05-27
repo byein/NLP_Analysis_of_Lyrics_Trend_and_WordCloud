@@ -129,7 +129,7 @@ The title or dataset can be changed.~~
 [최종 사용 데이터셋](https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv)
 
 ### Reference
-[주제 및 데이터](https://can-do.tistory.com/138?category=804018)
+[주제 및 데이터](https://can-do.tistory.com/5?category=804018)
 
 [tfidf wordcloud](https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb)
 
