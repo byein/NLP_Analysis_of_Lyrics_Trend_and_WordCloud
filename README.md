@@ -140,5 +140,8 @@ https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb
 Clustering documents with TFIDF and KMeans<br>
 https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook
 
+wikidocs<br>
+https://wikidocs.net/50739
+
 word2vec <br>
 https://woolulu.tistory.com/133
