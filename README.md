@@ -139,3 +139,6 @@ https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb
 
 Clustering documents with TFIDF and KMeans<br>
 https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook
+
+Word2Vec (gensim), KMeans 이용해서 unsupervised learning하기 (자연어처리) <br>
+https://bangseogs.tistory.com/95
