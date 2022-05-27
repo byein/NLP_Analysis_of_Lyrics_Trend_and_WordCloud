@@ -56,27 +56,21 @@ The purpose of this project is find the sentiment trend of the eras by using the
 
 ##### 1960s
 ![data60s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030218-eb9510ec-6026-4942-af15-b72ab33b2f83.png)
-![data60s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030222-e24ff033-7d01-4051-b10b-31f7fe691d62.png)
 
 ##### 1970s
 ![data70s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030227-13ba8145-42a2-4fd1-a7bc-c4d76c2a6c8e.png)
-![data70s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030229-873552d8-afbd-42e9-ae79-bdbeaf115a22.png)
 
 ##### 1980s
 ![data80s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030234-a2bd5ea6-386e-411d-96a0-afc46ca1bffa.png)
-![data80s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030235-59c46bcb-a87c-4bcf-9349-61564acf0e91.png)
 
 ##### 1990s
 ![data90s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030239-92e78f92-0a18-4d8c-b543-8be833438e05.png)
-![data90s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030241-a1f5379c-6d54-4f0b-a7b4-f8e7e361b5a0.png)
 
 ##### 2000s
 ![data00s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030193-238120b4-2cc2-4d65-a568-d06d848456a3.png)
-![data00s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030202-522b7f18-152e-4768-8e09-8af9cda9ee0d.png)
 
 ##### 2010s
 ![data10s_cluster_plot](https://user-images.githubusercontent.com/49120917/170030208-c893aef8-ec24-47bb-a794-22cc8a0677ec.png)
-![data10s_SSE_cluster_center_plot](https://user-images.githubusercontent.com/49120917/170030212-13347e8d-9be6-416d-aaf8-a43a09af3a7a.png)
 
 
 #### Word2vec Visualization
@@ -104,19 +98,21 @@ The purpose of this project is find the sentiment trend of the eras by using the
 
 
 ### 결론 Conclusion
-tfidf를 이용해 클러스터링을 한 결과 그래프를 관찰하면 60s~80s는 몰려있는 경향을 보이며 그 이후는 좀 더 다양하게 퍼져있는 것을 볼 수 있다. <br>
-SSE를 이용해서 최적 elbow를 구하고자 했지만 그래프들이 선형을 그리거나 너무 왔다갔다 하는 경향을 보여 이를 이용하지 않고 그냥 임의의 개수를 이용해 클러스터링을 진행하였다.<br>
-데이터가 너무 많았기 때문에 20개의 클러스터로 분류했다.<br>
-하지만 조금이나마 elbow에 가까운 값을 이용했어야 했는데 이를 이용하지 않고 그냥 클러스터 개수를 나눠서 그런지 성능이 매우 좋다고는 하기 어렵다.<br>
+tfidf를 이용해 클러스터링을 한 결과 그래프를 관찰하면 60s~80s는 몰려있는 경향을 보이며 그 이후는 좀 더 다양하게 퍼져있는 것을 볼 수 있습니다. <br>
+SSE를 이용해서 최적 elbow를 구하고자 했지만 그래프들이 선형을 그리거나 너무 왔다갔다 하는 경향을 보여 이를 이용하지 않고 그냥 임의의 개수를 이용해 클러스터링을 진행하였습니다.<br>
+데이터가 너무 많았기 때문에 20개의 클러스터로 분류했습니다.<br>
 
-word2vec을 이용해 클러스터링한 결과를 보게 되면 각 시대별로 단어들의 관계를 시각적으로 볼 수 있다. 어떤 단어들 간에 더 관계가 있는 단어인지는 실행한 결과나 첨부한 이미지를 보면 쉽게 확인할 수 있다. 각 시대별로 어떤 단어들이 같이 쓰인 것이 많은지 확인할 수 있는데 재밌는 것은 style을 각 시대별로 출력한 결과다. 각 시대마다 같이 쓰인 단어가 모두 다르며 특히, 2010년대에는 style과 가장 연관있는 단어로 gangnam, oppa 등이 나온다. 강남스타일 노래 가사가 나온 것이다. 물론 이걸 가사로 학습시키면서 우리가 아는 일반적인 word2vec과는 답이 다르게 나올 수 있지만 가사를 통한 트렌드 분석이 주목적이었던 만큼 각 시대별로 가사들 간 관계를 확인하는 기능은 잘 이뤄지고 있는 것으로 판단된다.
+word2vec을 이용해 클러스터링한 결과를 보게 되면 각 시대별로 단어들의 관계를 시각적으로 볼 수 있습니다. 어떤 단어들 간에 더 관계가 있는 단어인지는 실행한 결과나 첨부한 이미지를 보면 쉽게 확인할 수 있다. 각 시대별로 어떤 단어들이 같이 쓰인 것이 많은지 확인할 수 있는데 재밌는 것은 style을 각 시대별로 출력한 결과입니다. 각 시대마다 같이 쓰인 단어가 모두 다르며 특히, 2010년대에는 style과 가장 연관있는 단어로 gangnam, oppa 등이 나옵니다. 강남스타일 노래 가사가 나온 것입니다. 당연히 일반적인 word2vec과는 답이 다르게 나올 수 있는데 이 프로젝트의 주목적이 가사를 통한 트렌드 분석이기 때문입니다. 
 
-tf-idf를 이용해 wordcloud를 만든 결과를 보면 전체적으로 love, like 와 같은 긍정적인 감정이 주를 이룬다. 그런데 여기서 재밌는 것은 00s, 10s의 wordcloud를 자세히 보면 nigga, bitch, fuck 과 같은 욕설들이 보인다. <br>
-분명 사랑과 같은 긍정적인 감정이 주인 것은 맞지만 시대가 변해가면서 2000년대에 들어설수록 사람들은 자기 감정에 보다 더 솔직해지고 직설적인 화법이 유행하기 시작했음을 알 수 있다.<br>
+style의 결과를 통해 각 시대별로 가사들 간 관계를 확인하는 기능은 잘 이뤄지고 있는 것으로 판단됩니다.
 
-10s의 경우 2010~2015년의 빌보드 차트를 분석한 결과이기 때문에 현재와 약 7년 간의 공백이 존재한다. 
+tf-idf를 이용해 wordcloud를 만든 결과를 보면 전체적으로 love, like 와 같은 긍정적인 감정이 주를 이룹니다. 그런데 여기서 재밌는 것은 00s, 10s의 wordcloud를 자세히 보면 nigga, bitch, fuck 과 같은 욕설들이 보다. <br>
+분명 사랑과 같은 긍정적인 감정이 주인 것은 맞지만 시대가 변해가면서 2000년대에 들어설수록 사람들은 자기 감정에 보다 더 솔직해지고 직설적인 화법이 유행하기 시작했음을 알 수 있습니다.<br>
 
-7년 간의 공백이 존재하지만 위의 결과로 이 공백 기간을 추측하고 앞으로의 가사 추세도 예측해 볼 수 있다. wordcloud에서 추측한 정서와 유사하게 요즘 나오는 노래 중에는 대놓고 욕설이 들어간 노래들이 매우 많은데 이를 통해 공백 기간에는 가사에 더 많은 욕설이 포함될 것을 추측할 수 있다. 또한, 빌보드에서 장기 석권을 이룬 BTS의 dynamite를 생각해보면 코로나 시기를 겪으면서 위로가 되는 노래가 유행을 타기도 했다. 지금까지 분석한 wordcloud의 가사에는 긍정적인 감정의 단어가 더 큰 비중을 가졌다면 앞으로는 긍정과 부정이 비슷한 비율로 이뤄질 것으로 예측된다.
+#### 앞으로의 활용
+10s의 경우 2010~2015년의 빌보드 차트를 분석한 결과이기 때문에 현재와 약 7년 간의 공백이 존재합니다. 
+
+7년 간의 공백이 존재하지만 위의 결과로 이 공백 기간을 추측하고 앞으로의 가사 추세도 예측해 볼 수 있을 것으로 기대됩니다. 빌보드에서 장기 석권을 이룬 BTS의 dynamite를 생각해보면 코로나 시기를 겪으면서 위로가 되는 노래가 유행을 타기도 했습니다. 또한, wordcloud에서 추측한 정서와 유사하게 요즘 나오는 노래 중에는 대놓고 욕설이 들어간 노래들이 매우 많은데 이를 통해 공백 기간에는 가사에 더 많은 욕설이 포함될 것을 추측할 수 있습니다. 지금까지 분석한 wordcloud의 가사에는 긍정적인 감정의 단어가 더 큰 비중을 가졌다면 앞으로는 긍정과 부정이 비슷한 비율로 이뤄질 것으로 예측다.
 
 
 ### Dataset
