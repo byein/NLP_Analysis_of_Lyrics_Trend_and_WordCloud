@@ -14,10 +14,12 @@ Myself
 
 ### Purpose(목적)
 1964~2015년도까지의 모든 빌보드 Top100 가사를 분석하는 것이 목표입니다. <br>
-분석이란 해당 시대의 특징을 밝히는 것부터 nlp를 통해 관찰할 수 있는 것들을 포함하며 이 프로젝트에서는 특히, 그 시대의 특징을 알아내고자 합니다.<br>
-또한, nlp의 tf-idf, word2vec 등을 이용하여 가사들의 분포나 빈도, 관계를 알아내고자 합니다.<br>
+시대 별로 노래 가사를 분석하여 각 시대마다 두드러지게 나타나는 특징은 무엇인지 알아보며 시대별로 변화된 특징은 무엇인지 확인해보고자 합니다. <br>
+즉, 시대별 트렌드 분석이 핵심입니다. <br>
+분석 방법으로는 nlp의 tf-idf, word2vec, wordcloud 등을 이용하여 가사들의 분포나 빈도, 관계를 알아내고 시각화 하고자 합니다.<br>
 
 ### Description(작품 설명)
+#### 프로젝트 진행 과정
 1. 빌보드 가사 데이터 셋을 가져옵니다<br>
 Classify the songs using the billboard lyrics dataset.
   ~~* 빌보드 가사 데이터 셋이 유효하게 동작하지 않는다면 빌보드의 차트와 곡 정보만 표시된 데이터를 가져옵니다.<br>
@@ -45,10 +47,10 @@ Clustering with the word2vec, visualize the result.
 7. TF-IDF를 이용하여 시대별로 추출된 가사를 각각 단어의 빈도에 따라 워드클라우드로 만듭니다.<br>
 Visualize the every eras' lyrics as wordcloud using TF-IDF.
 
-8. 워드클라우드만 보고 그 시대의 감성의 트렌드를 파악하고자 하는 것이 이 작품의 목표입니다.<br>
-The purpose of this project is find the sentiment trend of the eras by just watching the 'wordcloud'.
+8. 워드클라우드를 보고 그 시대의 감성의 트렌드를 파악하고자 하는 것이 이 작품의 목표입니다.<br>
+The purpose of this project is find the sentiment trend of the eras by using the 'wordcloud'.
 
-### Result
+### Result Image
 
 #### Clustering Analysis Plot
 
@@ -107,28 +109,28 @@ SSE를 이용해서 최적 elbow를 구하고자 했지만 그래프들이 선�
 데이터가 너무 많았기 때문에 20개의 클러스터로 분류했다.<br>
 하지만 조금이나마 elbow에 가까운 값을 이용했어야 했는데 이를 이용하지 않고 그냥 클러스터 개수를 나눠서 그런지 성능이 매우 좋다고는 하기 어렵다.<br>
 
-word2vec을 이용해 클러스터링한 결과를 보게 되면 각 시대별로 단어들의 관계를 시각적으로 볼 수 있다. 어떤 단어들 간에 더 관계가 있는 단어인지는 실행한 결과나 첨부한 이미지를 보면 쉽게 확인할 수 있다. 각 시대별로 어떤 단어들이 같이 쓰인 것이 많은지 확인할 수 있는데 재밌는 것은 style을 각 시대별로 출력한 결과다. 각 시대마다 같이 쓰인 단어가 모두 다르며 특히, 2010년대에는 style과 가장 연관있는 단어로 gangnam, oppa 등이 나온다. 강남스타일 노래 가사가 나온 것이다. 물론 이걸 가사로 학습시키면서 우리가 아는 일반적인 word2vec과는 답이 다르게 나올 수 있지만 가사들 간 얼마나 가까운지를 확인하는 기능은 잘 이뤄지고 있는 것으로 판단된다.
+word2vec을 이용해 클러스터링한 결과를 보게 되면 각 시대별로 단어들의 관계를 시각적으로 볼 수 있다. 어떤 단어들 간에 더 관계가 있는 단어인지는 실행한 결과나 첨부한 이미지를 보면 쉽게 확인할 수 있다. 각 시대별로 어떤 단어들이 같이 쓰인 것이 많은지 확인할 수 있는데 재밌는 것은 style을 각 시대별로 출력한 결과다. 각 시대마다 같이 쓰인 단어가 모두 다르며 특히, 2010년대에는 style과 가장 연관있는 단어로 gangnam, oppa 등이 나온다. 강남스타일 노래 가사가 나온 것이다. 물론 이걸 가사로 학습시키면서 우리가 아는 일반적인 word2vec과는 답이 다르게 나올 수 있지만 가사를 통한 트렌드 분석이 주목적이었던 만큼 각 시대별로 가사들 간 관계를 확인하는 기능은 잘 이뤄지고 있는 것으로 판단된다.
 
 tf-idf를 이용해 wordcloud를 만든 결과를 보면 전체적으로 love, like 와 같은 긍정적인 감정이 주를 이룬다. 그런데 여기서 재밌는 것은 00s, 10s의 wordcloud를 자세히 보면 nigga, bitch, fuck 과 같은 욕설들이 보인다. <br>
 분명 사랑과 같은 긍정적인 감정이 주인 것은 맞지만 시대가 변해가면서 2000년대에 들어설수록 사람들은 자기 감정에 보다 더 솔직해지고 직설적인 화법이 유행하기 시작했음을 알 수 있다.<br>
 
 10s의 경우 2010~2015년의 빌보드 차트를 분석한 결과이기 때문에 현재와 약 7년 간의 공백이 존재한다. 
 
-7년 간의 공백이 존재하지만 위의 결과로 이 공백 기간을 추측하고 앞으로의 가사 추세도 예측해 볼 수 있다. wordcloud에서 추측한 정서와 유사하게 요즘 나오는 노래 중에는 대놓고 욕설이 들어간 노래들이 매우 많은데 이를 통해 공백 기간에는 가사에 더 많은 욕설이 포함될 것을 추측할 수 있다. 또한, 빌보드에서 장기 석권을 이룬 BTS의 dynamite를 생각해보면 코로나 시기를 겪으면서 위로가 되는 노래가 유행을 타기도 했다. 지금까지 분석한 wordcloud의 가사에는 긍정적인 감정의 단어가 주를 이뤘다면 앞으로는 긍정과 부정이 주가 없이 유사한 비율로 이뤄질 것으로 예측된다.
+7년 간의 공백이 존재하지만 위의 결과로 이 공백 기간을 추측하고 앞으로의 가사 추세도 예측해 볼 수 있다. wordcloud에서 추측한 정서와 유사하게 요즘 나오는 노래 중에는 대놓고 욕설이 들어간 노래들이 매우 많은데 이를 통해 공백 기간에는 가사에 더 많은 욕설이 포함될 것을 추측할 수 있다. 또한, 빌보드에서 장기 석권을 이룬 BTS의 dynamite를 생각해보면 코로나 시기를 겪으면서 위로가 되는 노래가 유행을 타기도 했다. 지금까지 분석한 wordcloud의 가사에는 긍정적인 감정의 단어가 더 큰 비중을 가졌다면 앞으로는 긍정과 부정이 비슷한 비율로 이뤄질 것으로 예측된다.
 
 
 ### Dataset
-kaggle에서 제공하는 데이터셋을 활용할 예정이지만, 적절한 데이터셋이 더는 제공되지 않아 프로젝트 주제를 변경하거나 크롤링을 통한 데이터셋으로 바뀔 수 있습니다.<br>
+~~kaggle에서 제공하는 데이터셋을 활용할 예정이지만, 적절한 데이터셋이 더는 제공되지 않아 프로젝트 주제를 변경하거나 크롤링을 통한 데이터셋으로 바뀔 수 있습니다.<br>
 Using the Kaggle Dataset, but there are valid datasets no longer.
 The title or dataset can be changed.
 
-https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs
+~~https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs
 
-https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset
+~~https://www.kaggle.com/datasets/deepshah16/song-lyrics-dataset
 
-https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv
+[최종 사용 데이터셋](https://raw.githubusercontent.com/walkerkq/musiclyrics/master/billboard_lyrics_1964-2015.csv)
 
 ### Reference
-https://can-do.tistory.com/138?category=804018
-https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb
-https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook
+[주제 및 데이터](https://can-do.tistory.com/138?category=804018)
+[tfidf wordcloud](https://github.com/Madhakee01/WordCloud-Generator/blob/main/word_cloud_gen.ipynb)
+[tfidf, kmeans](https://www.kaggle.com/code/jbencina/clustering-documents-with-tfidf-and-kmeans/notebook)
